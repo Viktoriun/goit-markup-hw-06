@@ -1,5 +1,122 @@
 /* ---Header--- */
 
+.menu {
+    display: none;
+}
+
+.page-adress {
+    display: none;
+}
+
+.page-header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #e7e9fc;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.div-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-logotype {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
+    align-items: center;
+}
+
+.open-mobile-menu-button {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    line-height: 0;
+}
+
+.mobile-menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999999;
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+}
+
+.mobile-menu-close-button {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    padding-bottom: 24px;
+    background-color: transparent;
+    padding: 0;
+    line-height: 0;
+    fill: #e7e9fc;
+    border-radius: 50%;
+    stroke-width: 1px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    stroke: rgba(0, 0, 0, 0.10); 
+}
+
+.svg-mobile-menu-close-button {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu-close-button:hover,
+.mobile-menu-close-button:focus {
+    background-color: #404bbf;
+    border: none;
+    stroke: #ffffff;
+}
+
+.mobile-menu-nav {
+    margin-bottom: 84px;
+}
+.mobile-menu-list {
+    padding-top: 72px;
+
+}
+
+.mobile-menu-item {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 72px;
+}
+
+.mobile-link {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2E2F42;
+}
+
+.mobile-adress-item {
+    padding-top: 84px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 48px;
+}
+
+.mobile-page-contacts {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02pem;
+    color: #434455;
+}
 /* .page-header {
     border-bottom: 1px solid #e7e9fc;
     padding-top: 24px;
